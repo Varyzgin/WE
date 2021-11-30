@@ -2,9 +2,10 @@ div {
      float: left; /*Задаем обтекание*/
      /*line-height: 40px; Высота строки +  верт. центрирования текста*/
      /*margin-top: 60px;*/
-     line-height:1.5;
-     width: 120px; /*Фиксируем ширину блока*/
+     line-height:7em;
+     width: 140px; /*Фиксируем ширину блока*/
      height: 30px;
      /*margin-right: 10px;*/
+     white-space: nowrap; /* блок может содержать не более одной строки */
      text-align: left; /*Центрируем текст по горизонтали*/
     }
