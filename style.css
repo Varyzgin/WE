@@ -1,9 +1,9 @@
 div {
      float: left; /*Задаем обтекание*/
      /*line-height: 40px; Высота строки +  верт. центрирования текста*/
-     margin-top: 60px;
+     /*margin-top: 60px;*/
      width: 120px; /*Фиксируем ширину блока*/
      height: 30px;
-     margin-right: 10px;
+     /*margin-right: 10px;*/
      text-align: left; /*Центрируем текст по горизонтали*/
     }
