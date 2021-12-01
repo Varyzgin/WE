@@ -51,7 +51,7 @@
       <div class="w3-container header-color">
         <h1 align="center"> Добро пожаловать на наш сайт! </h1> 
         <h2 align="center"> Оповещения: </h2> 
-        <p align="center" style="line-height:1.5"> 3 декабря (пятница) — Контрольная по дифурам №2 </br> 15 декабря (среда) – итоговый тест по БЖД на 40 мин.</p>      
+        <p align="center" style="line-height:1.5"> 3 декабря (осталось <p id="show1"></p> дн.) — Контрольная по дифурам №2 </br> 15 декабря (осталось <p id="show2"></p> дн.) – итоговый тест по БЖД на 40 мин.</p>      
       </div>
 <p></br></p>
       <div class="w3-row-padding">
@@ -113,7 +113,15 @@
         var difference = initialDate - now;
         var millisecondsPerDay = 24 * 60 * 60 * 1000;
         var daysSince = Math.floor(difference / millisecondsPerDay);
-        document.getElementById('show').innerHTML = daysSince.toString();
+        document.getElementById('show1').innerHTML = daysSince.toString();
+      </script>
+<script  type="text/javascript">
+        var initialDate = new Date(2021, 11, 15); // Dec 1st 2012
+        var now = Date.now();
+        var difference = initialDate - now;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay);
+        document.getElementById('show2').innerHTML = daysSince.toString();
       </script>
     </body>
   </html>
