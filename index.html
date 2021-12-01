@@ -4,6 +4,43 @@
       <title>Первая Картавая Галактическая Империя</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="w3.css">
+      <style>
+        .collapsible {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+          background-color: #555;
+        }
+
+        .collapsible:after {
+          content: '\002B';
+          color: white;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+        }
+
+        .active:after {
+          content: "\2212";
+        }
+
+        .content {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #f1f1f1;
+        }
+      </style>
     </head>
     <body>
 
@@ -30,20 +67,20 @@
         </div>
 
         <div class="w3-third">
-
-          <button type="button">Open Collapsible</button>
-          <div overflow: hidden;>
+          <button class="collapsible">
             <h2>Вторник</h2>
+          </button>
+          <div class="content">
+            <p>Ccskrb</p>
           </div>
         </div>
 
         <div class="w3-third">
           <h2>Среда</h2>
-          <p>Tokyo is the capital of Japan.</p>
-          <p>It is the center of the Greater Tokyo Area,
-          and the most populous metropolitan area in the world.</p>
+                <p id="show"></p>
         </div>
       </div>
+      
       <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -58,6 +95,14 @@
             } 
           });
         }
+      </script>
+      <script  type="text/javascript">
+        var initialDate = new Date(2021, 11, 3); // Dec 1st 2012
+        var now = Date.now();
+        var difference = initialDate - now;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay);
+        document.getElementById('show').innerHTML = daysSince.toString();
       </script>
     </body>
   </html>
