@@ -5,8 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="w3.css">
       <style>
-        .buttonmonday {
-          background-color: Maroon;
+        .buttonmonday, .buttontusday {
           color: white;
           cursor: pointer;
           padding: 18px;
@@ -17,19 +16,6 @@
           outline: none;
           font-size: 15px;
         }
-        .buttontusday {
-          background-color: Sienna;
-          color: white;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          font-weight:bold;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-        }
-
         .active, .collapsible:hover {
           background-color: #555;
         }
@@ -46,21 +32,12 @@
           content: "\2212";
         }
 
-        .inmonday {
+        .content{
           padding: 0 18px;
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.2s ease-out;
           background-color: black;
-          border: 3px Maroon;
-        }
-        .intusday {
-          padding: 0 18px;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-          background-color: black;
-          border: 3px Sienna;
         }
         .header-color{
           color:AliceBlue!important;
@@ -75,13 +52,13 @@
         <h2 align="center"> Оповещения: </h2> 
         <p align="center" style="line-height:1.5"> 3 декабря (пятница) — Контрольная по дифурам №2 </br> 15 декабря (среда) – итоговый тест по БЖД на 40 мин.</p>      
       </div>
-
+<p></br></p>
       <div class="w3-row-padding">
         <div class="w3-third">
-          <button class="buttonmonday">
+          <button class="collapsible", background-color: Maroon>
             <h2>Понедельник</h2>
           </button>
-          <div class="inmonday">
+          <div class="content", border: 3px Maroon>
             <div class="w3-row-padding">
               <div class="w3-quarter">
                 <a href="https://zoom.us/j/97666705884?pwd=WkFtYkNyb3JjRFBjUHcvUFpMM0xadz09" style="color:MediumPurple" target="_blanc"> 7:30 / 9:10 </a> 
@@ -100,10 +77,10 @@
         </div>
 
         <div class="w3-third">
-          <button class="buttontusday">
+          <button class="collapsible", background-color: Sienna>
             <h2>Вторник</h2>
           </button>
-          <div class="intusday">
+          <div class="content", border: 3px Sienna>
             <p>Ccskrb</p>
           </div>
         </div>
