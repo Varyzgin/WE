@@ -5,13 +5,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="w3.css">
       <style>
-        .collapsible {
-          background-color: #777;
+        .buttonmonday {
+          background-color: Maroon;
           color: white;
           cursor: pointer;
           padding: 18px;
           width: 100%;
           border: none;
+          font-weight:bold;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        .buttontusday {
+          background-color: Sienna;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          font-weight:bold;
           text-align: left;
           outline: none;
           font-size: 15px;
@@ -33,12 +46,21 @@
           content: "\2212";
         }
 
-        .content {
+        .inmonday {
           padding: 0 18px;
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.2s ease-out;
-          background-color: #f1f1f1;
+          background-color: black;
+          border: 3px Maroon;
+        }
+        .intusday {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: black;
+          border: 3px Sienna;
         }
         .header-color{
           color:AliceBlue!important;
@@ -56,10 +78,10 @@
 
       <div class="w3-row-padding">
         <div class="w3-third">
-          <button class="collapsible">
+          <button class="buttonmonday">
             <h2>Понедельник</h2>
           </button>
-          <div class="content">
+          <div class="inmonday">
             <div class="w3-row-padding">
               <div class="w3-quarter">
                 <a href="https://zoom.us/j/97666705884?pwd=WkFtYkNyb3JjRFBjUHcvUFpMM0xadz09" style="color:MediumPurple" target="_blanc"> 7:30 / 9:10 </a> 
@@ -78,10 +100,10 @@
         </div>
 
         <div class="w3-third">
-          <button class="collapsible">
+          <button class="buttontusday">
             <h2>Вторник</h2>
           </button>
-          <div class="content">
+          <div class="intusday">
             <p>Ccskrb</p>
           </div>
         </div>
