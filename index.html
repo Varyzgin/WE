@@ -50,8 +50,15 @@
             Ресурсы
          </a>
       </div>
-      <p style="color:green">
-         ● 
-      </p>
+       <p id="show"></p>
+        <script  type="text/javascript">
+          var initialDate = new Date(2012, 11, 1); // Dec 1st 2012
+          var now = Date.now();
+          var difference = now - initialDate;
+          var millisecondsPerDay = 24 * 60 * 60 * 1000;
+          var daysSince = Math.floor(difference / millisecondsPerDay);
+
+          document.getElementById('show').innerHTML = daysSince.toString();
+        </script>
    </body>
 </html>
