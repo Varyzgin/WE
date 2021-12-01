@@ -30,10 +30,11 @@
         </div>
 
         <div class="w3-third">
-          <h2>Вторник</h2>
-          <p>Paris is the capital of France.</p> 
-          <p>The Paris area is one of the largest population centers in Europe,
-          with more than 12 million inhabitants.</p>
+
+          <button type="button">Open Collapsible</button>
+          <div overflow: hidden;>
+            <h2>Вторник</h2>
+          </div>
         </div>
 
         <div class="w3-third">
@@ -43,5 +44,20 @@
           and the most populous metropolitan area in the world.</p>
         </div>
       </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+      </script>
     </body>
   </html>
