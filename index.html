@@ -423,15 +423,15 @@
         var now = Date.now();
         var difference = initialDate - now;
         var millisecondsPerDay = 24 * 60 * 60 * 1000;
-        var daysSince = Math.floor(difference / millisecondsPerDay);
+        var daysSince = Math.floor(difference / millisecondsPerDay) + 1;
         document.getElementById('show1').innerHTML = "3 декабря (ост. " + daysSince.toString() + " дн.) — Контрольная по дифурам №2";
       </script>
 <script  type="text/javascript">
         var initialDate = new Date(2021, 11, 15); // Dec 1st 2012
         var now = Date.now();
-        var difference = initialDate - now + 1;
+        var difference = initialDate - now;
         var millisecondsPerDay = 24 * 60 * 60 * 1000;
-        var daysSince = Math.floor(difference / millisecondsPerDay);
+        var daysSince = Math.floor(difference / millisecondsPerDay) + 1;
         document.getElementById('show2').innerHTML = "15 декабря (ост. " + daysSince.toString() + " дн.) — итоговый тест по БЖД на 40 мин.";
       </script>
     </body>
