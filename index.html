@@ -429,7 +429,7 @@
 <script  type="text/javascript">
         var initialDate = new Date(2021, 11, 15); // Dec 1st 2012
         var now = Date.now();
-        var difference = initialDate - now;
+        var difference = initialDate - now + 1;
         var millisecondsPerDay = 24 * 60 * 60 * 1000;
         var daysSince = Math.floor(difference / millisecondsPerDay);
         document.getElementById('show2').innerHTML = "15 декабря (ост. " + daysSince.toString() + " дн.) — итоговый тест по БЖД на 40 мин.";
