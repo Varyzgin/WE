@@ -55,6 +55,7 @@
         <h2 align="center"> Оповещения: </h2> 
         <p id="show1" align="center"> </p>
         <p id="show2" align="center"> </p>
+        <p id="show3" align="center"> </p>
       </div>
 <br>
       <div class="w3-row-padding">     
@@ -435,13 +436,21 @@
           });
         }
       </script>
-<script  type="text/javascript">
+      <script  type="text/javascript">
+        var initialDate = new Date(2021, 11, 10); // Dec 1st 2012
+        var now = Date.now();
+        var difference = initialDate - now;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay) + 1;
+        document.getElementById('show1').innerHTML = "10 декабря (ост. " + daysSince.toString() + " дн.) — Контра по ТеоВеру";
+      </script>
+      <script  type="text/javascript">
         var initialDate = new Date(2021, 11, 15); // Dec 1st 2012
         var now = Date.now();
         var difference = initialDate - now;
         var millisecondsPerDay = 24 * 60 * 60 * 1000;
         var daysSince = Math.floor(difference / millisecondsPerDay) + 1;
-        document.getElementById('show1').innerHTML = "15 декабря (ост. " + daysSince.toString() + " дн.) — итоговый тест по БЖД на 40 мин.";
+        document.getElementById('show2').innerHTML = "15 декабря (ост. " + daysSince.toString() + " дн.) — итоговый тест по БЖД на 40 мин.";
       </script>
       <script  type="text/javascript">
         var initialDate = new Date(2021, 11, 17); // Dec 1st 2012
@@ -449,7 +458,8 @@
         var difference = initialDate - now;
         var millisecondsPerDay = 24 * 60 * 60 * 1000;
         var daysSince = Math.floor(difference / millisecondsPerDay) + 1;
-        document.getElementById('show2').innerHTML = "17 декабря (ост. " + daysSince.toString() + " дн.) — доп. пара по Матану у Чубарова в 12:30";
+        document.getElementById('show3').innerHTML = "17 декабря (ост. " + daysSince.toString() + " дн.) — доп. пара по Матану у Чубарова в 12:30";
       </script>
+      
     </body>
   </html>
